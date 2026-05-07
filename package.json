@@ -15,7 +15,14 @@
     "test": "wdio run ./config/wdio.conf.js",
     "test:login": "wdio run ./config/wdio.conf.js --suite login",
     "test:product": "wdio run ./config/wdio.conf.js --suite product",
-    "test:search": "wdio run ./config/wdio.conf.js --suite search"
+    "test:search": "wdio run ./config/wdio.conf.js --suite search",
+    "test:account": "wdio run ./config/wdio.conf.js --spec ./test/specs/account.test.js",
+    "test:searchios": "wdio run ./config/wdio.conf.js --spec ./test/specs/search-ios.test.js",
+    "test:smoke": "wdio run ./config/wdio.conf.js --spec ./test/specs/smoke-ios.test.js",
+    "test:productios": "wdio run ./config/wdio.conf.js --spec ./test/specs/product-ios.test.js",
+    "test:cartios": "wdio run ./config/wdio.conf.js --spec ./test/specs/cart-ios.test.js",
+    "test:checkoutios": "wdio run ./config/wdio.conf.js --spec ./test/specs/checkout-ios.test.js",
+    "test:inspect": "wdio run ./config/wdio.conf.js --spec ./test/specs/inspect-ios.test.js"
   },
   "dependencies": {
     "allure-commandline": "^2.25.0",
