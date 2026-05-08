@@ -25,4 +25,4 @@ jobs:
         env:
           SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
           SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-        run: npm run test:smoke
+        run: ENVIRONMENT=saucelabs npm run test:smoke
